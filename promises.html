@@ -1,0 +1,12 @@
+<script>
+    // promise is class in js
+    var record=new Promise((resolve,rej)=>{console.log(typeof resolve,typeof rej);
+    // resolve("task is completed")
+     rej("task is incompleted")
+})
+console.log(record);
+record.then((value)=>{console.log(value);//then handler is used for resolved values
+}).catch((error)=>{
+    console.log(error);
+    }).finally(()=>{console.log("poceed to next task");})
+</script>
